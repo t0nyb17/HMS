@@ -1,0 +1,30 @@
+.payments-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1b2a41; /* Match the dark theme */
+    color: #00d4ff;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .pay-now-btn {
+    background-color: #00d4ff;
+    color: #1b2a41;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .pay-now-btn:hover {
+    background-color: #007a99;
+  }
+  

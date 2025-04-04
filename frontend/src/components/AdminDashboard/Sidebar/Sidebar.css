@@ -1,0 +1,117 @@
+/* Sidebar.css */
+.sidebar {
+  width: 250px;
+  height: calc(100vh - 60px); 
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  overflow-y: auto;
+  transition: width 0.3s ease;
+}
+
+.sidebar.closed {
+  width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.sidebar button {
+  background-color: transparent;
+  border: none;
+  color: #ecf0f1;
+  font-size: 16px;
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: #34495e;
+  color: #ecdbba;
+}
+
+.sidebar button:focus {
+  outline: none;
+  background-color: #16a085;
+  color: white;
+}
+
+.sidebar button.active {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.sidebar button:last-child {
+  margin-bottom: 0;
+}
+
+.close-btn {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.close-btn svg {
+  color: white;
+  transition: transform 0.3s;
+}
+
+.close-btn svg:hover {
+  transform: rotate(90deg);
+}
+
+.open-btn {
+  position: fixed;
+  top: 70px;
+  left: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.open-btn svg {
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+.open-btn svg:hover {
+  color: #2980b9;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: lightslategray;
+  border-radius: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #2c3e50;
+}
+
+.sos-button {
+  background-color: #e74c3c;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sos-button:hover {
+  background-color: #c0392b;
+}

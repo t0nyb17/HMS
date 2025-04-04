@@ -1,0 +1,54 @@
+.f-wrapper {
+    background-color: rgb(178, 178, 178);
+    color: #ffffff;
+}
+
+.f-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-height: 110px;
+
+}
+
+.a1 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.a1:hover {
+    transform: scaleX(1.1);
+    color: darkblue;
+}
+
+.text {
+    color: whitesmoke;
+}
+
+.f-left {
+    gap: 1rem;
+}
+
+.f-menu {
+    gap: 1.5rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .f-container {
+        justify-content: center;
+    }
+
+    .f-container>div {
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .f-right {
+        justify-content: center;
+    }
+}

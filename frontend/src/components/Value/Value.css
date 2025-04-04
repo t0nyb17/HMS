@@ -1,0 +1,32 @@
+.about-wrapper {
+  background-color: #f9f9f9;
+}
+
+.about-container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.about-head {
+  margin-bottom: 2rem;
+}
+
+.housing-card {
+  border: 2px solid #ddd;
+  transition: box-shadow 0.3s;
+  transition: all 200ms ease-in;
+  margin: 1rem;
+}
+
+.housing-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  scale: 1.05;
+}
+
+.housing-card h3 {
+  color: #2c3e50;
+}
+
+.housing-card p {
+  color: #555; 
+}

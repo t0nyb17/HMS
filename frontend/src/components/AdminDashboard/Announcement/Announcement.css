@@ -1,0 +1,207 @@
+.announcement-page {
+  padding: 30px;
+  background-color: #34495e; 
+  font-family: 'Arial', sans-serif;
+  color: #ecf0f1; 
+  margin: 50px auto;
+  width: 60vw;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ecf0f1; 
+  text-align: center;
+}
+
+.announcement-header p {
+  text-align: center;
+  font-size: 1rem;
+  color: #bdc3c7; 
+  margin-bottom: 20px;
+}
+
+.announcement-container {
+  display: flex;
+  padding: 1rem;
+  gap: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.announcement-list,
+.announcement-details {
+  flex: 1;
+  max-width: 95%;
+}
+
+.announcement-list h2,
+.announcement-details h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ecf0f1; 
+  margin-bottom: 15px;
+}
+
+.announcement-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.announcement-list li {
+  margin-bottom: 20px;
+}
+
+.announcement-card {
+  background-color: #3b3b3b; 
+  color: #ecf0f1; 
+  padding: 12px;
+  border: 2px solid #555; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.announcement-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+  color: #1abc9c; 
+}
+
+.announcement-card p {
+  font-size: 0.85rem;
+  color: #bdc3c7; 
+}
+
+.announcement-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.details-btn,
+.delete-btn {
+  padding: 10px;
+  margin-right: 20px;
+  background-color: #1abc9c; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.details-btn:hover {
+  background-color: #16a085; 
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b; 
+}
+
+.announcement-details h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #ecf0f1; 
+}
+
+.announcement-details p {
+  font-size: 0.95rem;
+  color: #bdc3c7; 
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  padding: 10px;
+  background-color: #1abc9c; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-top: 15px;
+}
+
+.back-btn:hover {
+  background-color: #16a085; 
+}
+
+.new-announcement {
+  margin-top: 40px;
+}
+
+.new-announcement h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ecf0f1; 
+  margin-bottom: 15px;
+}
+
+.new-announcement form {
+  width: 90%;
+  background-color: #2c3e50; 
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.new-announcement .form-group {
+  margin-bottom: 12px;
+}
+
+.new-announcement .form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ecf0f1; 
+}
+
+.new-announcement .form-group input,
+.new-announcement .form-group textarea {
+  width: 90%;
+  padding: 8px;
+  border: 2px solid #555; 
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #ecf0f1; 
+  background-color: #3b3b3b; 
+}
+
+.new-announcement .form-group textarea {
+  resize: vertical;
+  height: 60px;
+}
+
+.submit-btn {
+  padding: 8px 12px;
+  background-color: #2ecc71; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.submit-btn:hover {
+  background-color: #27ae60; 
+}
+
+.reset-btn {
+  padding: 10px 15px;
+  background-color: #e67e22; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #d35400; 
+}

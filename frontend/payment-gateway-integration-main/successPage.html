@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Success</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
+    <style>
+        :root {
+            --primary-color: #4CAF50;
+            --secondary-color: #2E7D32;
+            --text-color: #333;
+            --bg-color: #F4F7F6;
+            --card-bg: #fff;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .payment-container {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px var(--shadow);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .success-icon {
+            font-size: 50px;
+            color: var(--primary-color);
+            background: rgba(76, 175, 80, 0.1);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+        }
+
+        .success-title {
+            font-size: 22px;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        .success-description {
+            font-size: 15px;
+            color: #666;
+            margin: 10px 0 20px;
+        }
+
+        .transaction-id {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--secondary-color);
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            margin: 15px 0;
+        }
+
+        .home-button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            color: white;
+            background: var(--primary-color);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        .home-button:hover {
+            background: var(--secondary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="payment-container">
+        <div class="success-icon">✔</div>
+        <div class="success-title">Payment Successful</div>
+        <div class="success-description">
+            Thank you for your payment! Your transaction has been successfully completed.
+        </div>
+        <div class="transaction-id">Transaction ID: 867224</div>
+        <a href="" class="home-button">Back to Home</a>
+    </div>
+</body>
+</html>

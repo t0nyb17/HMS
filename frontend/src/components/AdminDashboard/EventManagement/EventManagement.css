@@ -1,0 +1,152 @@
+/* EventManagement.css */
+.event-management {
+  padding: 30px;
+  background-color: #34495e; 
+  font-family: 'Arial', sans-serif;
+  color: #ecf0f1; 
+  margin: 50px auto;
+  width: 60vw;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.listEvents{
+  list-style-type: none;
+}
+
+.event-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.event-header h1 {
+  font-size: 2.5rem;
+  color: #ecf0f1; 
+}
+
+.event-header p {
+  font-size: 1.1rem;
+  color: #bdc3c7; /* Dark mode paragraph color */
+}
+
+.event-list {
+  margin-bottom: 30px;
+}
+
+.event-list h2 {
+  font-size: 1.8rem;
+  color: #ecf0f1; /* Dark mode heading color */
+  margin-bottom: 20px;
+}
+
+.event-item {
+  background-color: #2c3e50; 
+  padding: 20px;
+  border: 1px solid #555; 
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-left: -38px;
+  width: 50vw;
+}
+
+.event-item.confirmed {
+  background-color: #16a085; /* Dark mode confirmed item background */
+}
+
+.event-details h3 {
+  font-size: 1.5rem;
+  color: #ecf0f1; 
+}
+
+.event-details {
+  color: rgb(242, 242, 242); /* Change text color to white */
+}
+
+
+.done {
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px; 
+  background-color: #3498db; /* Dark mode done button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-details button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.done:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.delete-btn {
+  background-color: #e74c3c; /* Dark mode delete button */
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.new-event {
+  margin-top: 50px;
+  background-color: #2c3e50; /* Dark mode new event background */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-event h2 {
+  font-size: 1.8rem;
+  color: #ecf0f1; /* Dark mode new event heading color */
+  margin-bottom: 20px;
+}
+
+.new-event .form-group {
+  margin-bottom: 15px;
+}
+
+.new-event .form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ecf0f1; /* Dark mode label color */
+}
+
+.new-event .form-group input,
+.new-event .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  color: #ecf0f1; /* Dark mode input text color */
+  border: 1px solid #555; /* Darker border for inputs */
+  border-radius: 5px;
+  background-color: #3b3b3b; /* Dark mode input background */
+}
+
+.new-event .form-group textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  padding: 10px 15px;
+  background-color: #2ecc71; /* Dark mode submit button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #27ae60; /* Dark mode submit button hover color */
+}

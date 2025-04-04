@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Secure Payment Gateway | HMS</title>
+  <link rel="icon" href="images/dollar.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+  <div class="bg-white shadow-2xl rounded-2xl max-w-4xl w-full overflow-hidden">
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <!-- Image/Illustration -->
+      <div class="bg-gradient-to-tr from-blue-500 to-indigo-600 text-white p-10 flex flex-col justify-center">
+        <h2 class="text-3xl font-bold mb-4">Secure Payment Portal</h2>
+        <p class="text-lg mb-8">Complete your transaction safely and securely using our trusted payment methods.</p>
+        <img src="images/bank_78392.png" alt="Bank Icon" class="w-40 h-40 mx-auto opacity-80">
+      </div>
+
+      <!-- Payment Form -->
+      <div class="p-8">
+        <h3 class="text-xl font-semibold mb-6">Choose Payment Method</h3>
+        <div class="mb-6">
+          <ul class="flex space-x-4">
+            <li><button class="tab-button active text-blue-600 font-bold" data-tab="credit">Credit Card</button></li>
+            <li><button class="tab-button text-gray-600" data-tab="debit">Debit Card</button></li>
+            <li><button class="tab-button text-gray-600" data-tab="paypal">PayPal</button></li>
+            <li><button class="tab-button text-gray-600" data-tab="netbanking">Net Banking</button></li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="credit">
+          <form class="space-y-4">
+            <div>
+              <label class="block mb-1 font-medium">Amount</label>
+              <input type="text" placeholder="₹0.00" class="w-full border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+              <label class="block mb-1 font-medium">Name on Card</label>
+              <input type="text" placeholder="John Doe" class="w-full border rounded-md px-4 py-2">
+            </div>
+            <div>
+              <label class="block mb-1 font-medium">Card Number</label>
+              <input type="text" placeholder="1234 5678 9012 3456" class="w-full border rounded-md px-4 py-2">
+            </div>
+            <div class="flex space-x-4">
+              <div class="w-1/2">
+                <label class="block mb-1 font-medium">Expiration</label>
+                <input type="text" placeholder="MM/YY" class="w-full border rounded-md px-4 py-2">
+              </div>
+              <div class="w-1/2">
+                <label class="block mb-1 font-medium">CVV</label>
+                <input type="password" placeholder="•••" class="w-full border rounded-md px-4 py-2">
+              </div>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 transition">Pay Now</button>
+          </form>
+        </div>
+
+        <div class="tab-content hidden" id="debit">
+          <p class="text-gray-600">Debit card payment form (similar to credit).</p>
+        </div>
+
+        <div class="tab-content hidden" id="paypal">
+          <form class="space-y-4">
+            <label class="block mb-1 font-medium">PayPal Email</label>
+            <input type="email" placeholder="you@example.com" class="w-full border rounded-md px-4 py-2">
+            <label class="block mb-1 font-medium">Amount</label>
+            <input type="text" placeholder="₹0.00" class="w-full border rounded-md px-4 py-2">
+            <button type="submit" class="w-full bg-yellow-500 text-white font-semibold py-2 rounded-md hover:bg-yellow-600 transition">Pay with PayPal</button>
+          </form>
+        </div>
+
+        <div class="tab-content hidden" id="netbanking">
+          <form>
+            <label class="block mb-2 font-medium">Choose Bank</label>
+            <select class="w-full border rounded-md px-4 py-2">
+              <option>State Bank of India</option>
+              <option>ICICI Bank</option>
+              <option>Axis Bank</option>
+              <option>HDFC Bank</option>
+              <option>Punjab National Bank</option>
+            </select>
+            <button type="submit" class="w-full mt-4 bg-green-600 text-white font-semibold py-2 rounded-md hover:bg-green-700 transition">Proceed to Pay</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-50 text-center py-4 text-sm text-gray-500">
+      © 2025 Housing Management System. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const target = button.getAttribute("data-tab");
+
+        tabButtons.forEach(btn => btn.classList.remove("text-blue-600", "font-bold"));
+        button.classList.add("text-blue-600", "font-bold");
+
+        tabContents.forEach(content => {
+          content.classList.add("hidden");
+        });
+        document.getElementById(target).classList.remove("hidden");
+      });
+    });
+  </script>
+</body>
+</html>
