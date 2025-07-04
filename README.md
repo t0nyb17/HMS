@@ -89,11 +89,11 @@ Feel free to fork this repo and propose new features or improvements through pul
 
 ## 👨‍💻 Developed By
 
-**[Your Name]**  
+**Tanmay Bangar**  
 Engineering Student | Passionate Web Developer
 
 ---
 
 ## 📬 Contact
 
-For queries or collaboration: [your.email@example.com](mailto:your.email@example.com)
+For queries or collaboration: tanmaymbangar@gmail.com
