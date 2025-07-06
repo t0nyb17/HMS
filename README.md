@@ -143,9 +143,6 @@ Engineering Students | Passionate Web Developers
 ## 📬 Contact
 
 📧 Email: [tanmaymbangar@gmail.com](mailto:tanmaymbangar@gmail.com)
+https://github.com/ShaanAigal AND https://github.com/t0nyb17
 
 ---
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
