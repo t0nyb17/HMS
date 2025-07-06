@@ -95,7 +95,7 @@ Feel free to fork this repo and propose new features or improvements through pul
 
 ## 👨‍💻 Developed By
 
-**Tanmay Bangar**  
+**Tanmay Bangar, Shaan Aigal**  
 Engineering Student | Passionate Web Developer
 
 ---
